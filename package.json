@@ -2,11 +2,17 @@
   "name": "kabuto",
   "version": "0.1.0",
   "description": "yamlをtss形式に変換するnpmモジュール",
-  "main": "index.js",
+  "main": "lib",
   "bin": {
-    "kabuto": "index.js"
+    "kabuto": "./bin/bundle.js"
   },
   "scripts": {
+    "build": "npm run build:index && npm run build:bin",
+    "build:bin": "babel src/bin.js --out-file bin/kabuto",
+    "build:index": "babel src/index.js --out-file lib/index.js",
+    "watch": "npm run watch:index & npm run watch:bin",
+    "watch:bin": "babel src/bin.js --watch --out-file bin/kabuto",
+    "watch:index": "babel src/index.js --watch --out-file lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
