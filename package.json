@@ -1,8 +1,11 @@
 {
-  "name": "yaml-to-tss",
+  "name": "kabuto",
   "version": "0.1.0",
   "description": "yamlをtss形式に変換するnpmモジュール",
   "main": "index.js",
+  "bin": {
+    "kabuto": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
