@@ -1,0 +1,37 @@
+{
+  "name": "kabuto",
+  "version": "0.1.10",
+  "description": "yamlをtss形式に変換するnpmモジュール",
+  "main": "lib",
+  "bin": {
+    "kabuto": "./bin/kabuto"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run build:index && npm run build:bin",
+    "build:bin": "babel src/bin.js --out-file bin/kabuto",
+    "build:index": "babel src/index.js --out-file lib/index.js",
+    "watch": "npm run watch:index & npm run watch:bin",
+    "watch:bin": "babel src/bin.js --watch --out-file bin/kabuto",
+    "watch:index": "babel src/index.js --watch --out-file lib/index.js",
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sawa-zen/kabuto.git"
+  },
+  "author": "sawa-zen <sawadasuiren@gmail.com> (http://sawa-zen.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sawa-zen/kabuto/issues"
+  },
+  "homepage": "https://github.com/sawa-zen/kabuto",
+  "dependencies": {
+    "babel": "^5.8.19",
+    "commander": "^2.8.1",
+    "js-yaml": "^3.3.1",
+    "lodash": "^3.10.0",
+    "mocha": "^2.2.5"
+  },
+  "devDependencies": {}
+}
