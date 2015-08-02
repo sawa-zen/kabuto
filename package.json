@@ -13,7 +13,7 @@
     "watch": "npm run watch:index & npm run watch:bin",
     "watch:bin": "babel src/bin.js --watch --out-file bin/kabuto",
     "watch:index": "babel src/index.js --watch --out-file lib/index.js",
-    "test": "mocha test"
+    "test": "mocha -R spec"
   },
   "repository": {
     "type": "git",
