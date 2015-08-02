@@ -27,6 +27,8 @@
   "homepage": "https://github.com/sawa-zen/yaml-to-tss",
   "dependencies": {
     "babel": "^5.8.19",
+    "js-yaml": "^3.3.1",
+    "lodash": "^3.10.0",
     "mocha": "^2.2.5"
   }
 }

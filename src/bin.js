@@ -3,7 +3,12 @@
 import program from 'commander';
 import * as kabuto from '../';
 
-console.info(kabuto);
+var demo = [
+  '.hoge:',
+  '  width: Ti.UI.FILL'
+].join('\n');
+
+console.info(kabuto.compile(demo));
 
 // commanderの設定
 program
@@ -14,5 +19,3 @@ program
 
 // commander実行
 program.parse(process.argv);
-
-console.info(program.file);
