@@ -4,7 +4,7 @@
   "description": "yamlをtss形式に変換するnpmモジュール",
   "main": "lib",
   "bin": {
-    "kabuto": "./bin/bundle.js"
+    "kabuto": "./bin/kabuto.js"
   },
   "scripts": {
     "build": "npm run build:index && npm run build:bin",
