@@ -1,6 +1,6 @@
 {
   "name": "kabuto",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "yamlをtss形式に変換するnpmモジュール",
   "main": "lib",
   "bin": {
@@ -22,6 +22,7 @@
   },
   "author": "sawa-zen <sawadasuiren@gmail.com> (http://sawa-zen.com/)",
   "license": "ISC",
+  "keywords": ["yaml", "yml", "js-yaml", "tss", "titanium", "alloy"],
   "bugs": {
     "url": "https://github.com/sawa-zen/kabuto/issues"
   },
