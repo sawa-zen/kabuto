@@ -1,6 +1,6 @@
 {
   "name": "kabuto",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "yamlをtss形式に変換するnpmモジュール",
   "main": "lib",
   "bin": {
