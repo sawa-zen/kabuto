@@ -20,13 +20,13 @@ $ npm install kabuto
 一つの yaml ファイルの変換
 
 ```
-$ kabuto hoge.yaml --out-file hoge.tss
+$ kabuto hoge.yaml --file hoge.tss
 ```
 
 ディレクトリ単位での変換
 
 ```
-$ kabuto src --out-dir dist
+$ kabuto src --dir dist
 ```
 
 ## Author
